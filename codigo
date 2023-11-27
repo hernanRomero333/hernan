@@ -1,0 +1,32 @@
+
+function calculadora(peso){
+if (peso<=30){
+    console.log(hollyday(peso))
+}else{
+console.log(superficie(peso))
+}
+}
+
+function hollyday(valor){
+   let resultado;
+    if (valor>=20){
+        resultado=(valor-20)*20+1500;
+
+    }else if(valor<20 && valor>10){
+        resultado=((valor-10)*50)+1000;
+
+    }else{
+        resultado=valor*100;
+
+
+    }
+    return resultado;
+}
+console.log(hollyday(20))
+
+function superficie(valor){
+    let resultado=((valor*4)+7)/(valor+90)
+    return resultado;
+
+}
+console.log(superficie(34))
